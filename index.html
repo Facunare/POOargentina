@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="todo">
+    <div class="container">
+        <header>
+            <h1>ARGENTINA</h1>
+        </header>
+       
+    
+        
+        <main>
+            <section class="prov">
+                <div class="salta">
+                    <div class="checkbox">
+                        <input type="checkbox" class="checkbox_salta checkbox">
+                    </div>
+                    
+                    <h2>SALTA</h2>
+                    <img src="depositphotos_46636527-stock-photo-quebrada-de-cafayate-salta-argentina.jpg" alt="" class="foto1">
+                    <ul>
+                        <li>1/2 pension c/aereo</li>
+                        <li>1/2 pension c/bus</li>
+                        <li>Desayuno s/traslados</li>
+                    </ul>
+                    <div class="checkboxs">
+                        <input type="checkbox" name="" id="" class="eleccion_salta salta-1" disabled>
+                        <input type="checkbox" name="" id="" class="eleccion_salta salta-2" disabled>
+                        <input type="checkbox" name="" id="" class="eleccion_salta salta-3" disabled>
+                    </div>
+                    
+                </div>
+                 
+                <div class="mendoza">
+                    <div class="checkbox">
+                        <input type="checkbox" class="checkbox_mendoza checkbox">
+                    </div>
+                    <h2>MENDOZA</h2>
+                    <img src="caption.jpg" alt="" class="foto2">
+                    <div>
+                        
+                    </div>
+                    <ul>
+                        <li>1/2 pension c/aereo</li>
+                        <li>1/2 pension c/bus</li>
+                        <li>Desayuno s/traslados</li>
+                    </ul>
+                    <div class="checkboxs">
+                        <input type="checkbox" name="" id="" class="eleccion_mendoza mendoza-1" disabled>
+                        <input type="checkbox" name="" id="" class="eleccion_mendoza mendoza-2" disabled>
+                        <input type="checkbox" name="" id="" class="eleccion_mendoza mendoza-3" disabled>
+                    </div>
+                    
+                </div>
+                <div class="neuquen">
+                    <div class="checkbox">
+                        <input type="checkbox" class="checkbox_neuquen checkbox">
+                    </div>
+                    <h2>NEUQUEN</h2>
+                    <img src="neuquen.jfif" alt="" class="foto3">
+                    <ul>
+                        <li>1/2 pension c/aereo</li>
+                        <li>1/2 pension c/bus</li>
+                        <li>Desayuno s/traslados</li>
+                    </ul>
+                    <div class="checkboxs">
+                        <input type="checkbox" name="" id="" class="eleccion_neuquen neuquen-1" disabled>
+                        <input type="checkbox" name="" id="" class="eleccion_neuquen neuquen-2" disabled>
+                        <input type="checkbox" name="" id="" class="eleccion_neuquen neuquen-3" disabled>
+                    </div>
+                    
+                </div>
+            
+            </section>
+            
+            <section class="form">
+                <form class="formulario" action="enviar.php" method="POST" id="form">
+                    
+
+                    <div class="form__group">
+                        <input type="text" id="name" class="form__input" placeholder=" " 
+                        name="nombre">
+                        <label for="name" class="label_form" >Nombre: </label>
+                    </div>
+                    <div class="form__group">
+                        <input type="text" class="form__input" placeholder=" " name="apellido" id="apellido">
+                        <label for="apellido" class="label_form">Apellido: </label>
+                    </div>
+                   
+                    <div class="formas">
+                        <label for="pago" class="label">Forma de pago</label>
+                        <div class="formas_de_pago">
+                            <input type="checkbox" id="efectivo" name="">
+                            <label for="efectivo" id="label__efectivo">Efectivo</label>
+                            <input type="checkbox" id="tarjeta" name="">
+                            <label for="tarjeta" id="label__tarjeta">Tarjeta</label>
+                        </div>
+                    </div>
+                    <div class="boton">
+                        <input type="submit" value="ENVIAR" class="submit">
+                    </div>
+                    
+                    <p class="error"></p>
+                   
+
+                  
+                </form>
+            </section>
+           
+        </main>
+        
+    </div>
+    <script src="func.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>

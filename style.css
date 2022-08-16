@@ -1,0 +1,236 @@
+.todo{
+    
+    
+    height: 900px;
+    width: 600px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 10px;
+    
+    border-radius: 20px;
+    transition: all ease .3s;
+}
+
+.todo:hover{
+   
+    box-shadow: 0 0 .3rem .1rem rgb(0 0 0 / 0.5);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+header{
+    border-bottom: 1px solid black;
+    padding: 0.5rem .6rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgb(118, 138, 223);
+   
+}
+
+body h1{
+    text-align: center;
+    letter-spacing: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+
+    transition: all ease .3s;
+}
+
+header:hover h1{
+    letter-spacing: 30px;
+}
+
+.salta, .mendoza, .neuquen{
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid black;
+    
+}
+
+.salta{
+    width: 100%;
+    background-color: #ffe599;
+}
+
+
+.mendoza{
+    background-color: rgba(52, 153, 235, 0.562);
+}
+
+.neuquen{
+    background-color: rgba(40, 218, 40, 0.452);
+}
+
+.prov{
+    border-bottom: 1px solid black;
+}
+
+
+
+.checkbox{
+    padding: 15px;
+    border-right: 1px solid black;
+   
+}
+
+h2{
+    margin: 0 15px 0 15px;
+}
+
+img{
+    width: 150px;
+}
+
+.foto3{
+    margin-left: 6px;
+    margin-bottom: 1px;
+    margin-top: 2px;
+    height: 100px;
+}
+.foto1{
+    margin-left: 50px;
+}
+
+.checkboxs{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+/*FORMULARIO*/
+
+.form__label, .form__input{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form__label{
+    
+    margin-left: 5px;
+    
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+
+.form__input{
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid black;
+    outline: none;
+
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+
+}
+
+
+.form{
+   
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.formulario{
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+   
+    transition: box-shadow ease 0.3s;
+    padding-bottom: 50px;
+}
+.form__group{
+    position: relative;
+    --color: black;
+}
+
+
+
+.label_form{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+   font-family: inherit;
+    font-size: 16px;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.form__input:focus + .label_form,
+.form__input:not(:placeholder-shown) + .label_form{
+    transform: translateY(-18px) scale(.9);
+    transform-origin: top left;
+    
+}
+
+.label{
+    font-size: 30px;
+    
+}
+
+.formas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.formas_de_pago{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#efectivo, #tarjeta{
+    margin-top: 15px;
+}
+
+.boton{
+display: flex;
+justify-content: center;
+}
+
+.submit{
+    width: 300px;
+    margin-top: 50px;
+    height: 35px;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color:  rgb(118, 138, 223);
+    color: white;
+    transition: background-color ease 0.3s;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color :rgb(41, 74, 219) ;
+}
+
+.error{
+    font-size: 25px;
+    text-align: center;
+}
+
+button{
+    height: 20px;
+}
